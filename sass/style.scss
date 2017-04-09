@@ -1,0 +1,37 @@
+@import "sanitize";
+@import "variables";
+@import "mixin";
+
+@import "common/common";
+
+
+@media screen and(max-width: 480px) {
+  @import "smartphone/layout";
+  @import "smartphone/header";
+  @import "smartphone/footer";
+  @import "smartphone/hero";
+  @import "smartphone/article";
+  @import "smartphone/sidebar";
+  @import "smartphone/index";
+  @import "smartphone/modules/post";
+}
+@media screen and(min-width: 480px)and(max-width: 959px) {
+  @import "tablet/layout";
+  @import "tablet/header";
+  @import "tablet/footer";
+  @import "tablet/hero";
+  @import "tablet/article";
+  @import "tablet/sidebar";
+  @import "tablet/index";
+  @import "tablet/modules/post";
+}
+@media screen and(min-width: 960px) {
+  @import "desktop/layout";
+  @import "desktop/header";
+  @import "desktop/footer";
+  @import "desktop/hero";
+  @import "desktop/article";
+  @import "desktop/sidebar";
+  @import "desktop/index";
+  @import "desktop/modules/post";
+}

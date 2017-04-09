@@ -1,0 +1,59 @@
+.post-index-item {
+  margin-bottom: 32px;
+  display:flex;
+  flex-flow: column;
+}
+.post-thumbnail-wrapper {
+  margin: 0;
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+.post-content {
+  flex: 1;
+  padding: 16px 0;
+}
+.post-title {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 12px;
+  a {
+    text-decoration: none;
+    color: $title;
+  }
+}
+.post-meta {
+  list-style: none;
+  font-size: 12px;
+  padding: 0;
+  margin: 0 0 16px 0;
+  display: flex;
+  align-items: center;
+  .post-tag {
+    @include tag();
+    margin: 0 12px 0 0;
+  }
+}
+.c-post-author {
+  display: flex;
+  align-items: center;
+  .author-image-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid $line;
+    background: $line;
+    overflow: hidden;
+    img {
+      @include centered-image;
+    }
+  }
+  .author-name {
+    font-size: 12px;
+    padding-left: 8px;
+  }
+}

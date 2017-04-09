@@ -1,0 +1,73 @@
+.l-article-hero {
+  min-height: 560px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  background: $text;
+  .article-hero-image {
+    background-image: url("https://unsplash.it/1920/1080");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.4;
+  }
+  .article-hero-info {
+    position: relative;
+    padding: 104px 0 80px;
+  }
+  .article-category {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    &:after {
+      content: "";
+      display: block;
+      width: 48px;
+      height: 4px;
+      background: #fff;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+  }
+  .article-title {
+    font-size: 32px;
+    margin-bottom: 64px;
+  }
+  .author-image-wrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    border: 1px solid #ccc;
+    background: #ccc;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .author-name {
+    font-weight: bold;
+    margin: 0 0 4px;
+    font-size: 14px;
+  }
+  .article-posted-date {
+    margin: 0;
+    font-size: 14px;
+  }
+}

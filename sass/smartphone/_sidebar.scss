@@ -1,0 +1,97 @@
+.widget-title {
+  padding: 8px 0;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid $line;
+  position: relative;
+  margin-bottom: 16px;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60px;
+    border-bottom: 1px solid $blue;
+    left: 0;
+    bottom: -1px;
+  }
+}
+.side-post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  .side-post-item {
+    display: flex;
+    padding: 16px 0;
+  }
+  .post-thumbnail {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+    img {
+      @include centered-image;
+    }
+  }
+  .post-title {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.6;
+    padding: 0 0 0 16px;
+    margin: 0;
+    flex: 1;
+  }
+}
+.text-widget {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.tag-cloud {
+  overflow: hidden;
+  a {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 12px;
+    margin: 0 6px 8px 0;
+    background: $blue;
+    color: #fff;
+    padding: 0 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    font-size: 12px;
+  }
+}
+.widget-author {
+  .author-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .author-list-item {
+    flex: 1 1 50%;
+    width: 50%;
+    overflow: hidden;
+    margin-bottom: 12px;
+    .author-image-wrapper {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      position: relative;
+      border: 1px solid $line;
+      background: $line;
+      overflow: hidden;
+      float: left;
+      img {
+        @include centered-image;
+      }
+    }
+    .author-name {
+      font-size: 12px;
+      padding-left: 56px;
+    }
+  }
+}

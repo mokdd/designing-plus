@@ -1,0 +1,17 @@
+.container {
+  width: 98%;
+  max-width: 1048px;
+  margin: 0 auto;
+  position: relative;
+}
+.column-container {
+  display: flex;
+}
+.l-main-column {
+  padding: 32px 24px;
+  flex: 1;
+}
+.l-side-column {
+  padding: 32px 24px;
+  width: 348px;
+}
