@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>article</title>
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/menu_toggle.js"></script>
 </head>
 <body class="post">
   <div class="l-wrapper" id="container">
@@ -13,13 +14,16 @@
       <div class="container">
         <div class="main-logo">
           <a href=""><img src="img/logo_white.svg" alt="" class="logo-img"></a>
+          <button class="menu-button" id="menu-toggle" type="button" area-controls="menu-nav" area-expanded="false">
+            <span class="menu-toggle-inner"></span>
+          </button>
         </div>
-        <nav class="article-main-menu">
-          <ul class="main-meni-list">
-            <li class="main-menu-item"><a href=""></a></li>
-            <li class="main-menu-item"><a href=""></a></li>
-            <li class="main-menu-item"><a href=""></a></li>
-            <li class="main-menu-item"><a href=""></a></li>
+        <nav class="article-main-menu" id="menu-nav">
+          <ul class="main-menu-list">
+            <li class="main-menu-item"><a href="">デザイン</a></li>
+            <li class="main-menu-item"><a href="">プログラミング</a></li>
+            <li class="main-menu-item"><a href="">マーケティング</a></li>
+            <li class="main-menu-item current-menu-item"><a href="">テクノロジー</a></li>
           </ul>
         </nav>
       </div>

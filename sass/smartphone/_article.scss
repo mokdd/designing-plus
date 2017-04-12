@@ -63,6 +63,9 @@
     font-size: 14px;
     margin: 16px 0 32px;
     padding: 16px 24px;
+    background-image: url('../img/blockquote_l.svg'), url('../img/blockquote_r.svg');
+    background-position: left top, right bottom;
+    background-size: 24px;
   }
 }
 .article-footer-author {

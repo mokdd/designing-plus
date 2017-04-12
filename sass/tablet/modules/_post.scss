@@ -35,6 +35,10 @@
     @include tag();
     margin: 0 12px 0 0;
   }
+  .date {
+    color: $text;
+    opacity: 0.3;
+  }
 }
 .c-post-author {
   display: flex;
