@@ -1,0 +1,20 @@
+// 追従ヘッダー＆メニュー編
+.main-header {
+  position: absolute;
+}
+.header-top {
+  padding: 12px;
+}
+.header-top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo-img {
+    display: none;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+    fill: #fff;
+  }
+}

@@ -11,7 +11,7 @@
   display: inline-block;
   width: auto;
   max-width: 100%;
-  height: 24px;
+  height: $h + px;
   line-height: $h + px;
   border-radius: $h / 2 + px;
   background: $color;

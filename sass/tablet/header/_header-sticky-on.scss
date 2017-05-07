@@ -1,0 +1,33 @@
+.main-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  .header-top {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 12px 0;
+  }
+  .header-top-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .c-header-search {
+    display: none;
+  }
+  .logo-img {
+    display: none;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+    fill: $footer;
+  }
+  .menu-button {
+    display: block;
+  }
+  .menu-toggle-inner {
+    background: $footer;
+    &:before, &:after {
+      background: $footer;
+    }
+  }
+}

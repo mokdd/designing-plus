@@ -2,22 +2,29 @@
 @import "variables";
 @import "mixin";
 
+//共通
 @import "common/common";
+@import "common/article";
+@import "common/modules/post";
+@import "common/footer";
+@import "common/index";
+@import "common/sidebar";
 
-
+//SP
 @media screen and(max-width: 480px) {
   @import "smartphone/layout";
-  @import "smartphone/header";
+  @import "smartphone/header/header";
   @import "smartphone/footer";
   @import "smartphone/hero";
   @import "smartphone/article";
-  @import "smartphone/sidebar";
   @import "smartphone/index";
   @import "smartphone/modules/post";
 }
+
+//tablet
 @media screen and(min-width: 480px)and(max-width: 959px) {
   @import "tablet/layout";
-  @import "tablet/header";
+  @import "tablet/header/header";
   @import "tablet/footer";
   @import "tablet/hero";
   @import "tablet/article";
@@ -25,13 +32,16 @@
   @import "tablet/index";
   @import "tablet/modules/post";
 }
+
+//PC
 @media screen and(min-width: 960px) {
   @import "desktop/layout";
-  @import "desktop/header";
+  @import "desktop/header/header";
   @import "desktop/footer";
   @import "desktop/hero";
   @import "desktop/article";
   @import "desktop/sidebar";
   @import "desktop/index";
   @import "desktop/modules/post";
+  @import "desktop/modules/share";
 }

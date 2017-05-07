@@ -1,0 +1,19 @@
+// 追従ヘッダー＆メニュー編
+.main-header {
+  position: absolute;
+}
+.header-top {
+  padding: 64px 0;
+}
+.header-top-content {
+  display: flex;
+  justify-content: space-between;
+  .logo-img {
+    display: none;
+  }
+  .icon {
+    width: 64px;
+    height: 64px;
+    fill: #fff;
+  }
+}

@@ -1,0 +1,26 @@
+.header-top {
+  padding: 12px;
+}
+.header-top-content {
+  display: flex;
+  justify-content: space-between;
+}
+.c-header-search {
+  display: none;
+}
+.main-logo {
+  .icon {
+    display: none;
+  }
+  .logo-img {
+    display: inline-block;
+    width: 40px;
+    height: auto;
+  }
+}
+.menu-toggle-inner {
+  background: $footer;
+  &:before, &:after {
+    background: $footer;
+  }
+}

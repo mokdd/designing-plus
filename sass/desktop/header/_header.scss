@@ -1,0 +1,79 @@
+.post {
+  @import "header-article";
+  @import "header-main-menu";
+  .sticky-on {
+    @import "header-sticky-on";
+  }
+}
+.index {
+  @import "header-index";
+  .sticky-on {
+    @import "header-sticky-on";
+    @import "header-main-menu";
+  }
+}
+
+
+// アニメーション設定
+@keyframes menu-fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+@keyframes list-dropdown {
+  0%{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-header {
+  z-index: 200;
+  width: 100%;
+  transition: 0.2s;
+}
+
+// menu-button
+.menu-button {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  .menu-toggle-inner {
+    display: block;
+    height: 2px;
+    width: 24px;
+    background: #fff;
+    margin: 15px 4px;
+    transition: 0.2s;
+    transform-origin: center;
+    &:before, &:after {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #fff;
+      position: absolute;
+      left: 4px;
+      transition: 0.2s;
+      transform-origin: center;
+    }
+    &:before {
+      top: 8px;
+    }
+    &:after {
+      bottom: 8px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.c-share {
+  width: 100%;
+  display: flex;
+}
+.share-item {
+  flex: 1 0 25%;
+  padding: 16px 8px;
+  text-align: center;
+  .share-icon {
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+  }
+}
+.share-twitter {
+  background: $tw;
+}
+.share-facebook {
+  background: $fb;
+}
+.share-hatena {
+  background: $hb;
+}
+.share-pocket {
+  background: $pk;
+}

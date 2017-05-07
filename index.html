@@ -9,23 +9,32 @@
   <script type="text/javascript" src="js/menu_toggle.js"></script>
 </head>
 <body class="index">
-  <div class="l-wrapper" id="container">
-    <header class="main-header">
-      <div class="container">
+  <div class="l-wrapper" id="sticky-wrapper">
+    <header class="main-header" id="main-header">
+      <div class="main-header-content">
         <div class="header-top">
-          <div class="header-search">
-            <form action="">
-              <input type="text" class="search-form-input">
-            </form>
+          <div class="container">
+            <div class="header-top-content">
+              <div class="c-header-search">
+                <form action="">
+                  <input type="text" class="search-form-input">
+                </form>
+              </div>
+              <div class="main-logo">
+                <a href="">
+                  <svg class="icon">
+                    <use xlink:href="svg/icons.svg#logo"></use>
+                  </svg>
+                  <img src="img/logo.svg" alt="" class="logo-img">
+                </a>
+              </div>
+              <button class="menu-button" id="menu-toggle" type="button" area-controls="menu-nav" area-expanded="false">
+                <span class="menu-toggle-inner"></span>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="main-logo">
-          <a href=""><img src="img/logo.svg" alt="" class="logo-img"></a>
-          <button class="menu-button" id="menu-toggle" type="button" area-controls="menu-nav" area-expanded="false">
-            <span class="menu-toggle-inner"></span>
-          </button>
-        </div>
-        <nav class="index-main-menu" id="menu-nav">
+        <nav class="main-menu">
           <ul class="main-menu-list">
             <li class="main-menu-item"><a href="">デザイン</a></li>
             <li class="main-menu-item"><a href="">プログラミング</a></li>
@@ -40,8 +49,11 @@
         <div class="c-featured-post">
           <article class="featured-article">
             <header class="featured-header">
-              <figure class="featured-thumb"><img src="https://unsplash.it/650/432" alt=""></figure>
-              <h1 class="featured-title">感情のためのデザインとは？今すぐできる5つのテクニック感情のためのデザインとは？今すぐできる5つのテクニック</h1>
+              <figure class="featured-thumb">
+                <a href="#"><img src="https://unsplash.it/650/432" alt=""></a>
+              </figure>
+              <h1 class="featured-title">
+                <a href="#">感情のためのデザインとは？今すぐできる5つのテクニック感情のためのデザインとは？今すぐできる5つのテクニック</a></h1>
               <span class="new-arrival">New</span>
             </header>
             <div class="featured-content">
@@ -136,16 +148,16 @@
           <h3 class="widget-title">New post</h3>
           <ul class="side-post-list">
             <li class="side-post-item">
-              <div class="post-thumbntail"><img src="https://unsplash.it/80" alt=""></div>
-              <h5 class="post-title">感情のためのデザインとは？今すぐできる5つのテクニック</h5>
+              <div class="post-thumbntail"><a href="#"><img src="https://unsplash.it/80" alt=""></a></div>
+              <h5 class="post-title"><a href="#">感情のためのデザインとは？今すぐできる5つのテクニック</a></h5>
             </li>
             <li class="side-post-item">
-              <div class="post-thumbntail"><img src="https://unsplash.it/80" alt=""></div>
-              <h5 class="post-title">感情のためのデザインとは？今すぐできる5つのテクニック</h5>
+              <div class="post-thumbntail"><a href="#"><img src="https://unsplash.it/80" alt=""></a></div>
+              <h5 class="post-title"><a href="#">感情のためのデザインとは？今すぐできる5つのテクニック</a></h5>
             </li>
             <li class="side-post-item">
-              <div class="post-thumbntail"><img src="https://unsplash.it/80" alt=""></div>
-              <h5 class="post-title">感情のためのデザインとは？今すぐできる5つのテクニック</h5>
+              <div class="post-thumbntail"><a href="#"><img src="https://unsplash.it/80" alt=""></a></div>
+              <h5 class="post-title"><a href="#">感情のためのデザインとは？今すぐできる5つのテクニック</a></h5>
             </li>
           </ul>
         </section>

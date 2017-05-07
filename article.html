@@ -9,16 +9,25 @@
   <script type="text/javascript" src="js/menu_toggle.js"></script>
 </head>
 <body class="post">
-  <div class="l-wrapper" id="container">
-    <header class="main-header">
-      <div class="container">
-        <div class="main-logo">
-          <a href=""><img src="img/logo_white.svg" alt="" class="logo-img"></a>
-          <button class="menu-button" id="menu-toggle" type="button" area-controls="menu-nav" area-expanded="false">
-            <span class="menu-toggle-inner"></span>
-          </button>
+  <div class="l-wrapper" id="sticky-wrapper">
+    <header class="main-header" id="main-header">
+      <div class="main-header-content">
+        <div class="header-top">
+          <div class="container">
+            <div class="header-top-content">
+              <a href="">
+                <svg class="icon">
+                  <use xlink:href="svg/icons.svg#logo"></use>
+                </svg>
+                <img src="img/logo_white.svg" alt="" class="logo-img">
+              </a>
+              <button class="menu-button" id="menu-toggle" type="button" area-controls="menu-nav" area-expanded="false">
+                <span class="menu-toggle-inner"></span>
+              </button>
+            </div>
+          </div>
         </div>
-        <nav class="article-main-menu" id="menu-nav">
+        <nav class="main-menu">
           <ul class="main-menu-list">
             <li class="main-menu-item"><a href="">デザイン</a></li>
             <li class="main-menu-item"><a href="">プログラミング</a></li>
@@ -64,6 +73,38 @@
                 <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quod ipsa possimus</blockquote>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident neque cumque, at laudantium quia libero est? Error eos alias, sequi voluptatem nisi debitis. Nemo autem odit maxime, aliquam aspernatur unde.</p>
               </div>
+              <aside class="c-share-button">
+                <ul class="share-button-list">
+                  <li class="share-button-item facebook">
+                    <a href="#">
+                      <svg class="icon">
+                        <use xlink:href="svg/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="share-button-item twitter">
+                    <a href="#">
+                      <svg class="icon">
+                        <use xlink:href="svg/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="share-button-item hatebu">
+                    <a href="#">
+                      <svg class="icon">
+                        <use xlink:href="svg/icons.svg#hatebu"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="share-button-item pocket">
+                    <a href="#">
+                      <svg class="icon">
+                        <use xlink:href="svg/icons.svg#pocket"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </aside>
               <aside class="article-footer-author">
                 <div class="article-footer-author-img"><img src="" alt=""></div>
                 <div class="article-footer-author-text">
@@ -81,16 +122,16 @@
               <h3 class="widget-title">New post</h3>
               <ul class="side-post-list">
                 <li class="side-post-item">
-                  <div class="post-thumbntail"><img src="https://unsplash.it/80" alt=""></div>
-                  <h5 class="post-title">感情のためのデザインとは？今すぐできる5つのテクニック</h5>
+                  <div class="post-thumbntail"><a href="#"><img src="https://unsplash.it/80" alt=""></a></div>
+                  <h5 class="post-title"><a href="#">感情のためのデザインとは？今すぐできる5つのテクニック</a></h5>
                 </li>
                 <li class="side-post-item">
-                  <div class="post-thumbntail"><img src="https://unsplash.it/80" alt=""></div>
-                  <h5 class="post-title">感情のためのデザインとは？今すぐできる5つのテクニック</h5>
+                  <div class="post-thumbntail"><a href="#"><img src="https://unsplash.it/80" alt=""></a></div>
+                  <h5 class="post-title"><a href="#">感情のためのデザインとは？今すぐできる5つのテクニック</a></h5>
                 </li>
                 <li class="side-post-item">
-                  <div class="post-thumbntail"><img src="https://unsplash.it/80" alt=""></div>
-                  <h5 class="post-title">感情のためのデザインとは？今すぐできる5つのテクニック</h5>
+                  <div class="post-thumbntail"><a href="#"><img src="https://unsplash.it/80" alt=""></a></div>
+                  <h5 class="post-title"><a href="#">感情のためのデザインとは？今すぐできる5つのテクニック</a></h5>
                 </li>
               </ul>
             </section>
