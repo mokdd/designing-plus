@@ -1736,6 +1736,44 @@ body a {
   .post-title {
     font-size: 15px;
   }
+  .c-share-button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  .c-share-button .share-button-list {
+    list-style: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .c-share-button .share-button-item {
+    text-align: center;
+    width: 25%;
+    margin: 0;
+    padding: 4px 0;
+  }
+  .c-share-button .facebook {
+    background: #3B5998;
+  }
+  .c-share-button .twitter {
+    background: #55acee;
+  }
+  .c-share-button .hatebu {
+    background: #008fde;
+  }
+  .c-share-button .pocket {
+    background: #ef4056;
+  }
+  .c-share-button .icon {
+    width: 12px;
+    height: 12px;
+    fill: #fff;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 959px) {
@@ -2409,6 +2447,41 @@ body a {
   }
   .post-title {
     font-size: 16px;
+  }
+  .share-button-list {
+    list-style: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .share-button-item {
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    line-height: 30px;
+    margin: 4px;
+  }
+  .facebook {
+    background: #3B5998;
+  }
+  .twitter {
+    background: #55acee;
+  }
+  .hatebu {
+    background: #008fde;
+  }
+  .pocket {
+    background: #ef4056;
+  }
+  .icon {
+    width: 16px;
+    height: 16px;
+    fill: #fff;
   }
 }
 

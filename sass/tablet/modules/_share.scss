@@ -1,0 +1,31 @@
+.share-button-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.share-button-item {
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  line-height: 30px;
+  margin: 4px;
+}
+.facebook {
+  background: $fb;
+}
+.twitter {
+  background: $tw;
+}
+.hatebu {
+  background: $hb;
+}
+.pocket {
+  background: $pk;
+}
+.icon {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+}
